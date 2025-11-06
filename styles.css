@@ -37,7 +37,7 @@ body {
 .profile-image,
 .school-logo {
   width: 110px;
-  height: 110px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid white;
@@ -179,3 +179,4 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 }
+

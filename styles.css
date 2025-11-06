@@ -1,0 +1,181 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.7;
+  background: #fffaf5;
+  color: #333;
+}
+
+/* Header */
+.site-header {
+  background: #ffb347; /* soft orange */
+  color: #4a2800;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-image,
+.school-logo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+/* Intro Section */
+.intro-section {
+  text-align: center;
+  flex: 1;
+}
+
+.student-name {
+  font-size: 2rem;
+  color: #802000;
+  margin-bottom: 0.4rem;
+  letter-spacing: 1px;
+}
+
+.student-title {
+  font-size: 1.1rem;
+  color: #4a2800;
+  font-style: italic;
+}
+
+/* Navigation */
+.main-navigation .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: #fff;
+  background: #ff7f00;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.main-navigation a:hover {
+  background: #ffa54f;
+  color: #4a2800;
+}
+
+/* Main Content */
+main {
+  padding: 2rem 1rem;
+}
+
+/* General Section Styles */
+.content-section {
+  margin-bottom: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.8rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+  color: #cc5500;
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #ffb347;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+/* Education Section */
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.education-item {
+  background: #fff0e0;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #ffb347;
+  transition: transform 0.3s ease;
+}
+
+.education-item:hover {
+  transform: scale(1.05);
+}
+
+.education-item h3 {
+  color: #ff7f00;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Interests Section */
+.interest-list {
+  list-style-type: square;
+  padding-left: 2rem;
+  color: #4a2800;
+}
+
+.interest-list li {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+/* Work Experience */
+#work-history p {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+
+/* Footer */
+.site-footer {
+  background: #ff7f00;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+  .header-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .main-navigation .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education-list {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}
